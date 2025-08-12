@@ -1,0 +1,58 @@
+.loginPage {
+    background: linear-gradient(135deg, rgba(255, 99, 71, 0.6), rgba(65, 105, 225, 0.6)),
+                url("Images/employee ms.jpeg") center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Login Form */
+.loginForm {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loginForm:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Small Employee Icon */
+.employee_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.employee_image:hover {
+    transform: rotate(10deg) scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Large Employee Image */
+.empImg {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.6);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.empImg:hover {
+    transform: scale(1.05) rotate(-5deg);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
